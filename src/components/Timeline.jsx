@@ -9,7 +9,7 @@ const Timeline = () => {
       <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
         {timelineData.map((item, index) => (
           <div key={index} style={{ display: 'flex', gap: '2rem', alignItems: 'flex-start' }}>
-            <div style={{ minWidth: '80px', color: '#38bdf8', fontWeight: 'bold', paddingTop: '1.5rem' }}>
+            <div style={{alignSelf: 'center', color: '#38bdf8', fontWeight: 'bold', paddingTop: '1.5rem' }}>
               {item.year}
             </div>
             <GlassCard className="timeline-card" style={{ flex: 1 }}>

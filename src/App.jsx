@@ -27,7 +27,7 @@ function App() {
       </main>
 
       <footer style={{ textAlign: 'center', padding: '4rem 0', color: '#64748b' }} >
-        <p>© 2026 Desenvolvedora. Feito com React & Glassmorphism.</p>
+        <p>© 2026 Desenvolvedora Misians.</p>
       </footer>
     </div>
   )

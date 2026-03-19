@@ -1,4 +1,4 @@
-import { Code2, Cpu, Database, PenTool, Terminal, Smartphone } from 'lucide-react';
+import { Code2, Cpu, Database, PenTool, Terminal, Smartphone, ComputerIcon } from 'lucide-react';
 
 export const personalData = {
   name: "Artemísia Kimberlly", // Coloque seu nome real aqui
@@ -7,8 +7,9 @@ export const personalData = {
 };
 
 export const skills = [
-  { name: "Flutter/Dart, React Native", icon: <Smartphone size={24} />, level: "Mobile" },
+  { name: "Dart/Flutter, React Native", icon: <Smartphone size={24} />, level: "Mobile" },
   { name: "React, Nuxt.js, VueJs & Angular", icon: <Terminal size={24} />, level: "FrontEnd" },
+  { name: "PHP/Laravel, Python/Django,  & JS/Node", icon: <ComputerIcon size={24} />, level: "Backend" },
   { name: "ESP32, Arduino & Raspberry pi pico", icon: <Cpu size={24} />, level: "Robótica" },
   { name: "PostgreSQL, MySql, Sqlite & Redis", icon: <Database size={24} />, level: "Banco de Dados" },
   { name: "Photoshop, Adobe XD, Figma & Canva", icon: <PenTool size={24} />, level: "Design Tools" },
@@ -46,9 +47,27 @@ export const projectsData = [
     tags: ["Python", "YOLO", "Computer Vision"]
   },
   {
-    title: "Sweet Hell Branding",
-    category: "Design",
-    desc: "Desenvolvimento de identidade visual minimalista e dinâmica para marca de geleias artesanais.",
-    tags: ["Design", "Branding", "Criatividade"]
+    title: "SUAS",
+    category: "Web & Prototype",
+    desc: "Desenvolvimento do sistema base da assistência social do Rio Grande do Norte",
+    tags: ["Design", "Frontend", "ReactJS", "Figma"]
+  },
+  {
+    title: "Programa Leite Potiguar",
+    category: "Web & Prototype",
+    desc: "Desenvolvimento do sistema base ddo programa leite potiguar",
+    tags: ["Design", "Frontend", "React Native", "Figma"]
+  },
+  {
+    title: "Site do programa Jovem Potiguar",
+    category: "Web & Prototype",
+    desc: "Desenvolvimento do sistema base ddo programa leite potiguar",
+    tags: ["Design", "Frontend", "React Native", "Figma"]
+  },
+  {
+    title: "Maxxi App consulta veicular",
+    category: "Web & Prototype",
+    desc: "Desenvolvimento do sistema de buscar dados veiculares da empresa Maxxi",
+    tags: ["Design", "Frontend", "React Native", "Figma"]
   }
 ];
