@@ -1,16 +1,31 @@
-# React + Vite
+# Portfólio 2026 — Artemísia Kimberlly (@Misians)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio profissional e acadêmico de **Artemísia Kimberlly Marques da Silva** — Desenvolvedora Full Stack, Mestranda em Ciência da Computação (UERN) e Pesquisadora no Laboratório de Aprendizagem Robótica (LAR/UERN).
 
-Currently, two official plugins are available:
+🌐 **Acesse online:** [https://Misians.github.io/portfolio2026](https://Misians.github.io/portfolio2026)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Destaques do Portfólio
 
-## React Compiler
+- **Hero Interativo & Métricas:** Apresentação completa com seletor das fotos de perfil, links diretos (GitHub, GitLab, ORCID, ResearchGate) e opção de impressão/PDF de currículo.
+- **Stack & Competências Categorizadas:** Front-End (React, TypeScript, Chakra UI, Tailwind, Zustand, React Query), Back-End & Automação RPA (FastAPI, Django, Playwright, Selenium Grid, Skyvern/Ollama), Mobile (Flutter, React Native), Robótica Social & IoT (ESP32, MQTT, Impressão 3D) e Inteligência Artificial (PyTorch, YOLO, Piper TTS ONNX).
+- **Galeria de Projetos com Filtro por Categoria:**
+  - **Roboldo (TCC & Mestrado):** Prancha CAA/PECS gamificada em Flutter + Robô Social ESP32 + Síntese de Voz Neural (Piper TTS).
+  - **Simulation & Emission API:** Cotação e emissão simultânea em 10 seguradoras portuguesas com FastAPI, Playwright, Selenium Grid e LLM local (Ollama).
+  - **Ecossistema SUAS (SETHAS/RN):** Arquitetura Front-End e sistemas estaduais da Assistência Social do RN.
+  - **Inventário LAR (UERN):** Gestão de equipamentos, empréstimos e reservas de impressora 3D com React, TypeScript e Firebase.
+  - **Gamificar para Incluir, Deep Learning em Séries Temporais (PyTorch), Fish Quality AI (YOLO), Portais Leite/Jovem Potiguar e Maxxi App.**
+- **Produção Científica:** Artigos publicados no *Journal of the Brazilian Computer Society (JBCS)*, *Revista FT* e pesquisas em Interação Humano-Robô (HRI).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Como Executar Localmente
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Para gerar a build de produção ou publicar no GitHub Pages:
+
+```bash
+npm run build
+npm run deploy
+```
