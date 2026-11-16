@@ -182,13 +182,221 @@ export const projectsData = [
     category: "IoT & Robótica",
     featured: true,
     status: "TCC & Mestrado",
-    desc: "Prancha de Comunicação Alternativa e Aumentativa (PECS) gamificada integrada ao robô social Roboldo (ESP32, braço robótico e matriz expressiva). Conta com controle via MQTT/Django e painel web com síntese de voz neural em português (Piper TTS / ONNX) para apoio terapêutico e educacional no TEA.",
-    highlights: [
-      "Integração em tempo real entre app Flutter, broker MQTT, controlador Django e microcontrolador ESP32",
-      "Servidor de síntese de voz neural offline (Piper TTS pt-BR) com ajuste dinâmico de cadência e expressividade"
+    image: "projects/roboldo-quiz.png",
+    gallery: [
+      { label: "Quiz Assistivo", src: "projects/roboldo-quiz.png" },
+      { label: "Desafio Ciências", src: "projects/roboldo-start.png" }
     ],
-    tags: ["Flutter", "ESP32", "C++", "Python", "Piper TTS (ONNX)", "MQTT", "Django", "TEA / PECS"],
-    link: "https://github.com/Misians"
+    desc: "Prancha de Comunicação Alternativa e Aumentativa (PECS) e jogo educativo gamificado integrados ao robô social Roboldo (ESP32, braço robótico e matriz expressiva). Conta com controle via UDP/MQTT/Django e síntese de voz neural em português (Piper TTS / ONNX) para apoio terapêutico e educacional no TEA.",
+    highlights: [
+      "Integração em tempo real entre app Flutter, pacotes UDP/MQTT, controlador Python e microcontrolador ESP32",
+      "Expressões faciais reativas do Roboldo e síntese de voz neural offline (Piper TTS pt-BR)"
+    ],
+    tags: ["Flutter", "ESP32", "C++", "Python", "Piper TTS (ONNX)", "UDP / MQTT", "TEA / PECS"],
+    liveUrl: "https://misians.github.io/Roboldo-Game-Perguntas-e-Respostas/",
+    link: "https://github.com/Misians/Roboldo-Game-Perguntas-e-Respostas"
+  },
+  {
+    title: "Inventário LAR — Gestão de Laboratório de Robótica",
+    category: "Full Stack & Web",
+    featured: true,
+    status: "Open Source / UERN",
+    image: "projects/inventario-lar-overview.png",
+    gallery: [
+      { label: "Visão Geral", src: "projects/inventario-lar-overview.png" },
+      { label: "Impressora 3D", src: "projects/inventario-lar-printer.png" },
+      { label: "Relatórios", src: "projects/inventario-lar-reports.png" },
+      { label: "Login", src: "projects/inventario-lar-login.png" }
+    ],
+    desc: "Plataforma completa para o Laboratório de Aprendizagem Robótica (LAR/UERN), gerenciando empréstimos de equipamentos embarcados, reservas da impressora 3D, controle de insumos e relatórios analíticos.",
+    highlights: [
+      "Controle de acesso baseado em papéis (Professor e Aluno) com aprovação de reservas de impressão 3D",
+      "Exportação de relatórios gerenciais em PDF e CSV com histórico completo de movimentações"
+    ],
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Firebase / Supabase"],
+    liveUrl: "https://misians.github.io/Inventario-Lar/",
+    link: "https://github.com/Misians/Inventario-Lar"
+  },
+  {
+    title: "Gamificar para Incluir — Catálogo REA Acessível",
+    category: "Full Stack & Web",
+    featured: true,
+    status: "Educação Inclusiva",
+    image: "projects/gamificar-catalogo.png",
+    gallery: [
+      { label: "Catálogo", src: "projects/gamificar-catalogo.png" },
+      { label: "Detalhes do Jogo", src: "projects/gamificar-detalhes.png" }
+    ],
+    desc: "Recurso Educacional Aberto (REA) interativo voltado à inclusão educacional por meio de jogos digitais acessíveis, controles de alto contraste, escala tipográfica e integração com IA generativa.",
+    highlights: [
+      "Interface acessível construída com React 19, Tailwind CSS 4, barra de acessibilidade e animações Motion",
+      "Painel administrativo integrado ao Firebase Auth, Firestore e Google GenAI SDK"
+    ],
+    tags: ["React 19", "TypeScript", "Tailwind CSS", "Google GenAI", "Firebase", "Motion"],
+    liveUrl: "https://misians.github.io/Gamificar-Para-Incluir/",
+    link: "https://github.com/Misians/Gamificar-Para-Incluir"
+  },
+  {
+    title: "SO Docente Hub — Plataforma de Sistemas Operacionais",
+    category: "Full Stack & Web",
+    featured: true,
+    status: "Ensino Superior",
+    image: "projects/so-inicio.png",
+    gallery: [
+      { label: "Início", src: "projects/so-inicio.png" },
+      { label: "Simulados ENADE", src: "projects/so-simulados.png" },
+      { label: "Banco de Questões", src: "projects/so-questoes.png" },
+      { label: "Pedagógico", src: "projects/so-pedagogica.png" }
+    ],
+    desc: "Ambiente acadêmico interativo de apoio ao ensino de Sistemas Operacionais, reunindo gerador de simulados no padrão ENADE, banco de questões comentadas, acervo de materiais e trilha pedagógica.",
+    highlights: [
+      "Simulados interativos filtráveis por tópico (Processos, Threads, Memória Virtual, escalonamento e E/S)",
+      "Modo de impressão de provas e gerenciamento de estado com Zustand e React Query"
+    ],
+    tags: ["React 19", "TypeScript", "Tailwind CSS", "Zustand", "React Query", "Vite"],
+    liveUrl: "https://misians.github.io/Sistemas-Operacionais/",
+    link: "https://github.com/Misians/Sistemas-Operacionais"
+  },
+  {
+    title: "Irrigador Automatizado — Telemetria IoT & ESP32",
+    category: "IoT & Robótica",
+    featured: true,
+    status: "Hardware + Cloud",
+    image: "projects/irrigador-dashboard.png",
+    desc: "Sistema embarcado em ESP32 (PlatformIO C++) integrado a um dashboard web em React e Firebase Realtime Database para monitoramento microclimático e acionamento autônomo de irrigação.",
+    highlights: [
+      "Leitura contínua de umidade do solo, temperatura/umidade do ar (DHT22), sensor de chuva e vazão",
+      "Gráficos históricos em tempo real (Recharts) e tabela paginada de acionamento da válvula solenoide"
+    ],
+    tags: ["ESP32", "C++ / PlatformIO", "React", "Firebase RTDB", "Recharts", "IoT"],
+    liveUrl: "https://misians.github.io/Irrigador-Automatizado/",
+    link: "https://github.com/Misians/Irrigador-Automatizado"
+  },
+  {
+    title: "Portal Acadêmico Dr. Anderson Abner (LAR/UERN)",
+    category: "Full Stack & Web",
+    featured: false,
+    status: "Portal de Pesquisa",
+    image: "projects/site-abner-sobre.png",
+    gallery: [
+      { label: "Sobre & Artigos (Light)", src: "projects/site-abner-sobre.png" },
+      { label: "Projetos LAR (Dark)", src: "projects/site-abner-projetos.png" },
+      { label: "Formação Acadêmica", src: "projects/site-abner-academico.png" }
+    ],
+    desc: "Site profissional bilíngue (PT/EN) e com suporte a temas claro/escuro desenvolvido para o coordenador do Laboratório de Aprendizagem Robótica da UERN, destacando projetos de P&D e publicações.",
+    highlights: [
+      "Alternância instantânea de idioma (Context API PT/EN) e tema visual (Glassmorphism Light & Dark)",
+      "Galeria de projetos em Robótica Educacional (CellBots), Visão Computacional e Navegação Autônoma"
+    ],
+    tags: ["React", "TypeScript", "Vite", "Context API", "Bilingual PT/EN"],
+    liveUrl: "https://misians.github.io/Site-Abner/",
+    link: "https://github.com/Misians/Site-Abner"
+  },
+  {
+    title: "COIN 2024 — Congresso Interdisciplinar UERN",
+    category: "Full Stack & Web",
+    featured: false,
+    status: "Site Oficial de Evento",
+    image: "projects/coin2024-home.png",
+    gallery: [
+      { label: "Sobre & Eixos", src: "projects/coin2024-home.png" },
+      { label: "Programação", src: "projects/coin2024-programacao.png" }
+    ],
+    desc: "Plataforma web oficial do Congresso Interdisciplinar da UERN (Campus Natal), reunindo eixos temáticos, cronograma completo de 4 dias, submissão de trabalhos e comissão organizadora.",
+    highlights: [
+      "Desenvolvido com Vue 3, Vuetify 3 e Pinia com layout responsivo e suporte a temas",
+      "Organização clara de mesas temáticas, palestras, oficinas e instituições parceiras (UERN, UFRN, UFERSA, IFRN)"
+    ],
+    tags: ["Vue 3", "Vuetify", "Pinia", "Vite", "JavaScript"],
+    liveUrl: "https://misians.github.io/coin2024/",
+    link: "https://github.com/Misians/coin2024"
+  },
+  {
+    title: "ResPets — Rede Social de Monitoramento Animal",
+    category: "Full Stack & Web",
+    featured: false,
+    status: "Impacto Social",
+    image: "projects/respets-feed.png",
+    gallery: [
+      { label: "Mural & Alertas", src: "projects/respets-feed.png" },
+      { label: "Feed de Resgate", src: "projects/respets-adocao.png" }
+    ],
+    desc: "Rede social solidária sem fins lucrativos criada para conectar cuidadores independentes, mapear animais em situação vulnerável, organizar lares temporários e impulsionar adoções responsáveis.",
+    highlights: [
+      "Front-end em Vue 3 integrado a API RESTful em Node.js, Express, TypeScript e Prisma ORM",
+      "Registro rápido de alertas geolocalizados por bairro e nível de urgência veterinária"
+    ],
+    tags: ["Vue 3", "TypeScript", "Node.js", "Express", "Prisma ORM"],
+    liveUrl: "https://misians.github.io/respets/",
+    link: "https://github.com/Misians/respets"
+  },
+  {
+    title: "NanaBaby Store — E-Commerce Infantil Full Stack",
+    category: "Full Stack & Web",
+    featured: false,
+    status: "E-Commerce",
+    image: "projects/nanababy-produtos.png",
+    gallery: [
+      { label: "Vitrine de Ofertas", src: "projects/nanababy-produtos.png" },
+      { label: "Home & Categorias", src: "projects/nanababy-home.png" }
+    ],
+    desc: "Loja virtual completa especializada em artigos infantis e enxoval de bebê, com navegação por categorias, vitrine promocional (Nenê Friday), favoritos e API Back-End em Express + Prisma.",
+    highlights: [
+      "Catálogo dinâmico com indicadores de desconto, avaliação por estrelas e entrega expressa",
+      "Arquitetura desacoplada com React no Front-End e API TypeScript/Prisma no Back-End"
+    ],
+    tags: ["React", "TypeScript", "Express", "Prisma", "REST API"],
+    liveUrl: "https://misians.github.io/nanababy-store/",
+    link: "https://github.com/Misians/nanababy-store"
+  },
+  {
+    title: "Gelato On Ice — Sorveteria Artesanal Online",
+    category: "Full Stack & Web",
+    featured: false,
+    status: "Web App + API",
+    image: "projects/gelato-home.png",
+    gallery: [
+      { label: "Cardápio Gelato", src: "projects/gelato-home.png" },
+      { label: "Login Firebase", src: "projects/gelato-login.png" }
+    ],
+    desc: "Aplicação web de sorveteria artesanal com autenticação social via Firebase (Google Auth), filtro por linhas cremosas, picolés e opções veganas, consumindo API Node.js/Express.",
+    highlights: [
+      "Autenticação integrada ao Firebase Auth com persistência de sessão e rotas privadas",
+      "Catálogo visual de gelatos com detalhamento de ingredientes e selo vegano"
+    ],
+    tags: ["React", "Firebase Auth", "Node.js", "Express", "React Router"],
+    liveUrl: "https://misians.github.io/GelatoOnIce/",
+    link: "https://github.com/Misians/GelatoOnIce"
+  },
+  {
+    title: "FiguresLoja — Ateliê de Action Figures & Resina 3D",
+    category: "Full Stack & Web",
+    featured: false,
+    status: "Laravel + Vue 3",
+    image: "projects/figuresloja-home.png",
+    desc: "Plataforma de e-commerce para venda e encomenda de action figures artesanais impressas em resina 8K e pintadas à mão, construída com Laravel, Inertia.js, Vue 3 e Tailwind CSS v4.",
+    highlights: [
+      "Vitrine dark/neon com filtro por escala (1/6, 1/8, 1/10) e orçamento de modelos STL personalizados",
+      "Stack moderna combinando SSR com Inertia.js, Vue 3, TypeScript e Reka UI"
+    ],
+    tags: ["Vue 3", "TypeScript", "Laravel", "Inertia.js", "Tailwind CSS v4"],
+    liveUrl: "https://misians.github.io/FiguresLoja/",
+    link: "https://github.com/Misians/FiguresLoja"
+  },
+  {
+    title: "Ecommerce-Django — API RESTful & Catálogo CRUD",
+    category: "Back-End & IA",
+    featured: false,
+    status: "Django REST API",
+    image: "projects/ecommerce-django.png",
+    desc: "Sistema de e-commerce e gerenciamento de estoque em Python e Django REST Framework (DRF), com controle de permissões granulares entre leitura pública e mutação administrativa.",
+    highlights: [
+      "Modelagem de produtos com slug único, controle de estoque e serialização DRF",
+      "Módulo de autenticação de contas e permissões diferenciadas (AllowAny vs IsAdminUser)"
+    ],
+    tags: ["Python", "Django", "Django REST Framework", "SQLite / PostgreSQL"],
+    liveUrl: "https://misians.github.io/Ecommerce-django/",
+    link: "https://github.com/Misians/Ecommerce-django"
   },
   {
     title: "Simulation & Emission API — Automação RPA de Seguros",
@@ -213,78 +421,5 @@ export const projectsData = [
       "Módulos de gestão estadual, acompanhamento técnico e portais cidadãos de alto impacto social"
     ],
     tags: ["React", "TypeScript", "Chakra UI", "Zustand", "React Query", "REST API", "Figma"]
-  },
-  {
-    title: "Inventário LAR — Gestão de Laboratório de Robótica",
-    category: "Full Stack & Web",
-    featured: true,
-    status: "Open Source / UERN",
-    desc: "Plataforma completa para o Laboratório de Aprendizagem Robótica (LAR/UERN), gerenciando empréstimos de equipamentos, reservas de impressora 3D, controle de estoque de filamentos, projetos de pesquisa e diretório da comunidade.",
-    highlights: [
-      "Controle de acesso baseado em papéis (Aluno, Professor, Administrador) com aprovação de matrículas",
-      "Segurança no servidor via Firestore Security Rules e autenticação com confirmação de e-mail"
-    ],
-    tags: ["React", "TypeScript", "Vite", "Firebase Auth", "Cloud Firestore", "Security Rules"]
-  },
-  {
-    title: "Gamificar para Incluir",
-    category: "Full Stack & Web",
-    featured: false,
-    status: "Educação Inclusiva",
-    desc: "Aplicação web interativa voltada à inclusão educacional por meio de mecânicas de gamificação e recursos de inteligência artificial generativa, com suporte a deploy híbrido (Firebase Hosting & Cloud Functions).",
-    highlights: [
-      "Interface fluida e acessível construída com React 19, Tailwind CSS 4 e animações com Motion",
-      "Integração com Google GenAI SDK e backend serverless em Firebase"
-    ],
-    tags: ["React 19", "TypeScript", "Tailwind CSS", "Google GenAI", "Firebase", "Motion"],
-    link: "https://github.com/Misians"
-  },
-  {
-    title: "Deep Learning para Séries Temporais em Gamificação",
-    category: "Back-End & IA",
-    featured: false,
-    status: "Pesquisa em IA",
-    desc: "Estudo experimental comparativo para previsão multi-horizonte (t+1 a t+6) de engajamento e XP em plataformas gamificadas (Duolingo), contrastando estratégias de Bontempi et al. (Direta/MIMO vs. Recursiva) com 6 arquiteturas neurais.",
-    highlights: [
-      "Implementação em PyTorch de MLP, CNN 1D, LSTM, GRU, Seq2Seq e Transformer com prevenção estrita de data leakage",
-      "Avaliação rigorosa por horizonte de previsão utilizando MAE, RMSE e MASE"
-    ],
-    tags: ["PyTorch", "Deep Learning", "Transformers", "LSTM / GRU", "Scikit-Learn", "Séries Temporais"]
-  },
-  {
-    title: "Fish Quality AI — Rastreabilidade de Pescado (Produmar)",
-    category: "Back-End & IA",
-    featured: false,
-    status: "P&D Industrial",
-    desc: "Sistema de Visão Computacional para inspeção automatizada de qualidade e rastreabilidade logística de atuns, combinando detecção de objetos em tempo real com leitura de tags de identificação.",
-    highlights: [
-      "Treinamento e inferência com arquitetura YOLO para classificação visual de qualidade do pescado",
-      "Resultou em publicação científica na Revista FT (2026)"
-    ],
-    tags: ["Python", "YOLO", "Computer Vision", "OpenCV", "Rastreabilidade"]
-  },
-  {
-    title: "Portais Leite Potiguar & Jovem Potiguar",
-    category: "Full Stack & Web",
-    featured: false,
-    status: "Programas Sociais",
-    desc: "Prototipação de alta fidelidade e implementação das interfaces web e mobile para gestão operacional do Programa Leite Potiguar e do portal do Programa Jovem Potiguar no Rio Grande do Norte.",
-    highlights: [
-      "Foco em usabilidade para agentes públicos e beneficiários em múltiplos dispositivos",
-      "Design system consistente do protótipo no Figma à implementação em React / React Native"
-    ],
-    tags: ["React", "React Native", "UI/UX Design", "Figma", "Front-End"]
-  },
-  {
-    title: "Maxxi App — Consulta Veicular",
-    category: "Mobile & Design",
-    featured: false,
-    status: "App Mobile",
-    desc: "Aplicativo móvel e protótipo interativo desenvolvidos para a empresa Maxxi, permitindo busca rápida, visualização de histórico e consulta detalhada de dados veiculares.",
-    highlights: [
-      "Fluxo de busca otimizado e visualização clara de indicadores e laudos veiculares",
-      "Desenvolvimento mobile multiplataforma com React Native"
-    ],
-    tags: ["React Native", "Figma", "UI/UX", "Mobile", "Consumo de API"]
   }
 ];
