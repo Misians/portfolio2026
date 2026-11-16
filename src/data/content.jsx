@@ -24,7 +24,7 @@ export const personalData = {
   aboutPillars: [
     {
       title: "Full Stack & RPA Freelancer",
-      desc: "Arquitetura Front-End para o setor público (SETHAS/RN) e engenharia Back-End/RPA como freelancer internacional (Artbiz / Scal)."
+      desc: "Arquitetura Front-End para o setor público (SETHAS/RN) e engenharia Back-End/RPA como freelancer internacional (Artbiz)."
     },
     {
       title: "Robótica Social & IoT",
@@ -115,9 +115,9 @@ export const timelineData = [
   {
     year: "2025 — 2026",
     role: "Engenheira de Software Back-End & Automação RPA (Freelancer)",
-    org: "Artbiz / Scal (Mercado Segurador Português)",
+    org: "Artbiz (Mercado Segurador Europeu)",
     type: "Freelancer • Internacional",
-    desc: "Atuação como freelancer no desenvolvimento e manutenção da Simulation & Emission API em FastAPI, PostgreSQL e Docker. Orquestração paralela de robôs (Selenium Grid, Playwright e Skyvern com visão + LLM via Ollama) integrando 10 seguradoras portuguesas (Allianz, Fidelidade, Mapfre, Zurich, etc.) para cotação e emissão automatizada de apólices.",
+    desc: "Atuação como freelancer no desenvolvimento e manutenção de API de simulação e emissão em FastAPI, PostgreSQL e Docker. Orquestração paralela de robôs (Selenium Grid, Playwright e Skyvern com visão + LLM via Ollama) integrando múltiplas seguradoras europeias para cotação e emissão automatizada de apólices.",
     tags: ["Freelancer", "FastAPI", "Python", "Playwright", "Selenium Grid", "Ollama LLM", "PostgreSQL", "Docker"]
   },
   {
@@ -194,8 +194,8 @@ export const projectsData = [
     title: "Simulation & Emission API — Automação RPA de Seguros",
     category: "Back-End & IA",
     featured: true,
-    status: "Freelancer • Artbiz / Scal",
-    desc: "Projeto freelancer de engenharia Back-End e RPA para o mercado português: API de alta disponibilidade que realiza cotações simultâneas e emissão de apólices de seguro automóvel em 10 seguradoras (Allianz, Fidelidade, Mapfre, Zurich, Ageas, Lusitania, Tranquilidade, Caravela, Una e Victoria).",
+    status: "Freelancer • Artbiz",
+    desc: "Projeto freelancer de engenharia Back-End e RPA para o mercado europeu: API de alta disponibilidade que realiza cotações simultâneas e emissão automatizada de apólices de seguro automóvel integrando múltiplas seguradoras.",
     highlights: [
       "Orquestração multi-thread de crawlers Selenium Grid, Playwright e agentes autônomos Skyvern (Visão + LLM)",
       "Matching semântico de catálogo de veículos com LLM local (Ollama), armazenamento S3 e métricas no Grafana"

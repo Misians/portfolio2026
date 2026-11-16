@@ -10,7 +10,7 @@ Portfólio profissional e acadêmico de **Artemísia Kimberlly Marques da Silva*
 - **Stack & Competências Categorizadas:** Front-End (React, TypeScript, Chakra UI, Tailwind, Zustand, React Query), Back-End & Automação RPA (FastAPI, Django, Playwright, Selenium Grid, Skyvern/Ollama), Mobile (Flutter, React Native), Robótica Social & IoT (ESP32, MQTT, Impressão 3D) e Inteligência Artificial (PyTorch, YOLO, Piper TTS ONNX).
 - **Galeria de Projetos com Filtro por Categoria:**
   - **Roboldo (TCC & Mestrado):** Prancha CAA/PECS gamificada em Flutter + Robô Social ESP32 + Síntese de Voz Neural (Piper TTS).
-  - **Simulation & Emission API:** Cotação e emissão simultânea em 10 seguradoras portuguesas com FastAPI, Playwright, Selenium Grid e LLM local (Ollama).
+  - **Simulation & Emission API:** Cotação e emissão simultânea em múltiplas seguradoras com FastAPI, Playwright, Selenium Grid e LLM local (Ollama).
   - **Ecossistema SUAS (SETHAS/RN):** Arquitetura Front-End e sistemas estaduais da Assistência Social do RN.
   - **Inventário LAR (UERN):** Gestão de equipamentos, empréstimos e reservas de impressora 3D com React, TypeScript e Firebase.
   - **Gamificar para Incluir, Deep Learning em Séries Temporais (PyTorch), Fish Quality AI (YOLO), Portais Leite/Jovem Potiguar e Maxxi App.**
