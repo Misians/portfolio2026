@@ -233,7 +233,7 @@ export const projectsData = [
       "Painel administrativo integrado ao Firebase Auth, Firestore e Google GenAI SDK"
     ],
     tags: ["React 19", "TypeScript", "Tailwind CSS", "Google GenAI", "Firebase", "Motion"],
-    liveUrl: "https://misians.github.io/Gamificar-Para-Incluir/",
+    liveUrl: "https://gamificarparaincluir-81675.web.app/",
     link: "https://github.com/Misians/Gamificar-Para-Incluir"
   },
   {

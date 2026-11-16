@@ -274,7 +274,7 @@ const Projects = () => {
                           fontWeight: 700
                         }}
                       >
-                        Demo Online (GitHub Pages) <ExternalLink size={14} />
+                        Demo Online <ExternalLink size={14} />
                       </a>
                     )}
                     {project.link && (
